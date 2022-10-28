@@ -46,7 +46,6 @@ form.addEventListener('submit', (e)=>{
                     btnAudio.classList.add('hidden')
                 }
             }
-            console.log(data)
         }).catch (() => {
             word.textContent = "This word cannot be found"
             btnAudio.classList.add('hidden')
