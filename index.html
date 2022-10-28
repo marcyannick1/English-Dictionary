@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
-    <title>English Dictionnary</title>
+    <title>English Dictionary</title>
 </head>
 <body>
     <header>
-        <h1>English Dictionnary</h1>
+        <h1>English Dictionary</h1>
     </header>
     <div class="input">
         <form class="form">
-            <input type="text" placeholder="Put a word..." id="word">
+            <input type="text" placeholder="Put a word..." id="word" required>
             <button class="btn-search">Search</button>
         </form>
     </div>
     <div class="word">
         <h2></h2>
+        <button class="audio hidden">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
         <div class="word-details">
             <p class="part-of-speech"></p>
             <p class="phonetic-text"></p>
